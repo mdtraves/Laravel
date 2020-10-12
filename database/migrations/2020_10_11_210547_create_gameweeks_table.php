@@ -15,6 +15,8 @@ class CreateGameweeksTable extends Migration
     {
         Schema::create('gameweeks', function (Blueprint $table) {
             $table->id();
+            $table->id();
+            $table->id();
             $table->timestamps();
         });
     }

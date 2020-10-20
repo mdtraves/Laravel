@@ -17,18 +17,20 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    
     return view('welcome', ['articles' => App\Models\Article::take(2)->latest()->get()]);});
 
 Route::get('/about', function () {
     return view('about');
 });
 
-// Route::get('/blog', 'BlogController@show');
+Route::get('/todo-list', [App\Http\Controllers\TodoController::class, 'index']);
+Route::put('/todo-list/{todo}', [App\Http\Controllers\TodoController::class, 'complete'])->name('todo-list');
+Route::post('/todo-list/create', [App\Http\Controllers\TodoController::class, 'create']);
+Route::post('/todo-list/edit', [App\Http\Controllers\TodoController::class, 'edit']);
+Route::post('/todo-list/delete', [App\Http\Controllers\TodoController::class, 'delete']);
 
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index']);
 Route::get('/crisps', [App\Http\Controllers\CrispController::class, 'index']);
-
 Route::get('/blog/create', [App\Http\Controllers\BlogController::class, 'create']);
 Route::post('/blog', [App\Http\Controllers\BlogController::class, 'store']);
 Route::get('/blog/{id}', [App\Http\Controllers\BlogController::class, 'show']);

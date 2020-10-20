@@ -10,4 +10,40 @@ body{background-color: #fff;
 h5 {
     font-size: 200px;
 }
+h2 {color: #444;}
+h3 {color: pink}
+h4 {color:purple}
+}
+
+.wrapper{
+    display: flex;
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+}
+
+.todo-box{
+    height: 80vh;
+    width: 60vw;
+    border: 1px solid #ddd;
+}
+
+.todo-head{
+    padding: 20px;;
+    background-color: #ddd;
+}
+
+.todo-body{
+    padding: 20px;
+}
+
+ul{
+    list-style-type: none;
+    padding: 0;;
+}
+
+li {
+    margin-bottom: 20px;
+    display: flex;
+    justify-content: space-between;
 }

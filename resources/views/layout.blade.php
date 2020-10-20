@@ -34,39 +34,19 @@
 <link rel="stylesheet" href="/css/flexslider.css">
 <!-- Theme style  -->
 <link rel="stylesheet" href="/css/style.css">
+<link rel="stylesheet" href="/css/app.css">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+
 <!-- Modernizr JS -->
 <script src="/js/modernizr-2.6.2.min.js"></script>
 
 
 </head>
 <body>
-<div id="fh5co-page">
-    <a href="/" class="js-fh5co-nav-toggle fh5co-nav-toggle"><i></i></a>
-    <aside id="fh5co-aside" role="complementary" class="border js-fullheight">
-        <h1 id="fh5co-logo"><a href="/">Home</a></h1>
-        <nav id="fh5co-main-menu" role="navigation">
-            <ul>
-                <li class="{{ Request::path() === '/' ? 'fh5co-active' : ''}}"><a href="/">Home</a></li>
-                <li class="{{ Request::path() === 'blog' ? 'fh5co-active' : ''}}"><a href="/blog">Blog</a></li>
-                <li class=""><a href="/portfolio">Portfolio</a></li>
-                <li class="{{ Request::path() === 'about' ? 'fh5co-active' : ''}}"><a href="/about">About</a></li>
-                <li class=""><a href="/contact">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="fh5co-footer">
-            <p><small>&copy; Mike Traves</small></p>
-            <ul>
-                <li><a href="#"><i class="icon-facebook2"></i></a></li>
-                <li><a href="#"><i class="icon-twitter2"></i></a></li>
-                <li><a href="#"><i class="icon-instagram"></i></a></li>
-                <li><a href="#"><i class="icon-linkedin2"></i></a></li>
-            </ul>
-        </div>
-
-    </aside>
+<div id="">
         @yield ('content')
 
+</div>
 <!-- jQuery -->
 <script src="/js/jquery.min.js"></script>
 <!-- jQuery Easing -->

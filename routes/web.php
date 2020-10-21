@@ -24,10 +24,12 @@ Route::get('/about', function () {
 });
 
 Route::get('/todo-list', [App\Http\Controllers\TodoController::class, 'index']);
-Route::put('/todo-list/{todo}', [App\Http\Controllers\TodoController::class, 'complete'])->name('todo-list');
+Route::put('/todo-list/{todo}/complete', [App\Http\Controllers\TodoController::class, 'complete'])->name('todo-list');
+Route::put('/todo-list/{todo}/incomplete', [App\Http\Controllers\TodoController::class, 'incomplete'])->name('todo-list-incomplete');
 Route::post('/todo-list/create', [App\Http\Controllers\TodoController::class, 'create']);
-Route::post('/todo-list/edit', [App\Http\Controllers\TodoController::class, 'edit']);
-Route::post('/todo-list/delete', [App\Http\Controllers\TodoController::class, 'delete']);
+Route::get('/todo-list/{todo}/edit', [App\Http\Controllers\TodoController::class, 'edit'])->name('todo-list-edit');
+Route::put('/todo-list/{todo}/edit', [App\Http\Controllers\TodoController::class, 'update'])->name('todo-list-update');
+Route::post('/todo-list/{todo}/delete', [App\Http\Controllers\TodoController::class, 'delete'])->name('todo-list-delete');
 
 Route::get('/blog', [App\Http\Controllers\BlogController::class, 'index']);
 Route::get('/crisps', [App\Http\Controllers\CrispController::class, 'index']);

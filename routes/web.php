@@ -17,10 +17,10 @@ use Illuminate\Support\Facades\Route;
 
 
 Route::get('/', function () {
-    return view('welcome', ['articles' => App\Models\Article::take(2)->latest()->get()]);});
+    return view('welcome');
 
 Route::get('/about', function () {
-    return view('about');
+    return view('about', ['articles' => App\Models\Article::take(2)->latest()->get()]);});
 });
 
 Route::get('/todo-list', [App\Http\Controllers\TodoController::class, 'index']);

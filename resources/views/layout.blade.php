@@ -24,25 +24,12 @@
 
 <link href="https://fonts.googleapis.com/css?family=Roboto:100,300,400,500,700" rel="stylesheet">
 
-<!-- Animate.css -->
-<link rel="stylesheet" href="/css/animate.css">
-<!-- Icomoon Icon Fonts-->
-<link rel="stylesheet" href="/css/icomoon.css">
-<!-- Bootstrap  -->
-<link rel="stylesheet" href="/css/bootstrap.css">
-<!-- Flexslider  -->
-<link rel="stylesheet" href="/css/flexslider.css">
-<!-- Theme style  -->
-<link rel="stylesheet" href="/css/style.css">
 <link rel="stylesheet" href="/css/app.css">
-<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
-
-<!-- Modernizr JS -->
-<script src="/js/modernizr-2.6.2.min.js"></script>
 
 
 </head>
 <body>
+<header id="header"></header>
 <div id="">
         @yield ('content')
 

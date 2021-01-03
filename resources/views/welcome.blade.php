@@ -1,7 +1,7 @@
 @extends('layout')
 @section('content')
 
-<h1>MikeTraves.co.uk</h1>
+<h1>AquaGas Site</h1>
 
 @endsection
 
